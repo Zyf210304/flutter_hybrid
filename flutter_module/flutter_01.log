@@ -1,0 +1,68 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter attach
+
+## exception
+
+NoSuchMethodError: NoSuchMethodError: The getter 'port' was called on null.
+Receiver: null
+Tried calling: port
+
+```
+#0      Object.noSuchMethod (dart:core-patch/object_patch.dart:50:5)
+#1      AttachCommand.runCommand (package:flutter_tools/src/commands/attach.dart:219:78)
+<asynchronous suspension>
+#2      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:559:18)
+#3      _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:77:64)
+#4      _rootRunUnary (dart:async/zone.dart:1132:38)
+#5      _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#6      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#7      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#8      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#9      Future._complete (dart:async/future_impl.dart:473:7)
+#10     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#11     _AsyncAwaitCompleter.complete.<anonymous closure> (dart:async-patch/async_patch.dart:33:20)
+#12     _rootRun (dart:async/zone.dart:1124:13)
+#13     _CustomZone.run (dart:async/zone.dart:1021:19)
+#14     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#15     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#16     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#17     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:115:13)
+#18     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, v1.5.4-hotfix.2, on Mac OS X 10.14.4 18E227, locale zh-Hans-CN)
+    [32m•[39m Flutter version 1.5.4-hotfix.2 at /Users/zhangyafei/Desktop/flutter
+    [32m•[39m Framework revision 7a4c33425d (3 weeks ago), 2019-04-29 11:05:24 -0700
+    [32m•[39m Engine revision 52c7a1e849
+    [32m•[39m Dart version 2.3.0 (build 2.3.0-dev.0.5 a1668566e5)
+
+[31m[✗][39m Android toolchain - develop for Android devices
+    [31m✗[39m Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/setup/#android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, set ANDROID_HOME to that location.
+      You may also want to add it to your PATH environment variable.
+
+
+[32m[✓][39m iOS toolchain - develop for iOS devices (Xcode 10.2.1)
+    [32m•[39m Xcode at /Applications/Xcode.app/Contents/Developer
+    [32m•[39m Xcode 10.2.1, Build version 10E1001
+    [32m•[39m ios-deploy 1.9.4
+    [32m•[39m CocoaPods version 1.5.3
+
+[33m[!][39m Android Studio (not installed)
+    [32m•[39m Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/setup/#android-setup for detailed instructions).
+
+[32m[✓][39m Connected device (1 available)
+    [32m•[39m iPhone X • 3CC631D1-9314-44D1-8925-143928DFC7E7 • ios • com.apple.CoreSimulator.SimRuntime.iOS-12-2 (simulator)
+
+[33m![39m Doctor found issues in 2 categories.
+```

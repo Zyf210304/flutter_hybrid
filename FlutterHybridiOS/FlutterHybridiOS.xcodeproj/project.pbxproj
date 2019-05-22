@@ -13,6 +13,10 @@
 		0236C35F22943A4700F66D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236C35E22943A4700F66D7A /* Assets.xcassets */; };
 		0236C36222943A4700F66D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236C36022943A4700F66D7A /* LaunchScreen.storyboard */; };
 		0236C36522943A4700F66D7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0236C36422943A4700F66D7A /* main.m */; };
+		0236C37122952DDC00F66D7A /* NativeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0236C37022952DDC00F66D7A /* NativeVC.m */; };
+		0236C37422952DEB00F66D7A /* FlutterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0236C37322952DEB00F66D7A /* FlutterVC.m */; };
+		0236C37722952E0600F66D7A /* HybridVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0236C37622952E0600F66D7A /* HybridVC.m */; };
+		0236C37A22952EDD00F66D7A /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0236C37922952EDD00F66D7A /* MainVC.m */; };
 		608DD6C58203475EE0C89B85 /* libPods-FlutterHybridiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43180B3974E66A2FBDEA34D7 /* libPods-FlutterHybridiOS.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,14 @@
 		0236C36122943A4700F66D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0236C36322943A4700F66D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0236C36422943A4700F66D7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0236C36F22952DDC00F66D7A /* NativeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeVC.h; sourceTree = "<group>"; };
+		0236C37022952DDC00F66D7A /* NativeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeVC.m; sourceTree = "<group>"; };
+		0236C37222952DEB00F66D7A /* FlutterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterVC.h; sourceTree = "<group>"; };
+		0236C37322952DEB00F66D7A /* FlutterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterVC.m; sourceTree = "<group>"; };
+		0236C37522952E0600F66D7A /* HybridVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybridVC.h; sourceTree = "<group>"; };
+		0236C37622952E0600F66D7A /* HybridVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridVC.m; sourceTree = "<group>"; };
+		0236C37822952EDC00F66D7A /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		0236C37922952EDD00F66D7A /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		43180B3974E66A2FBDEA34D7 /* libPods-FlutterHybridiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlutterHybridiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E88A565937B39720CBA94D /* Pods-FlutterHybridiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterHybridiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlutterHybridiOS/Pods-FlutterHybridiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C612A719182FA93B68B52CE7 /* Pods-FlutterHybridiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterHybridiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlutterHybridiOS/Pods-FlutterHybridiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +81,14 @@
 				0236C35622943A4500F66D7A /* AppDelegate.m */,
 				0236C35822943A4500F66D7A /* ViewController.h */,
 				0236C35922943A4500F66D7A /* ViewController.m */,
+				0236C37822952EDC00F66D7A /* MainVC.h */,
+				0236C37922952EDD00F66D7A /* MainVC.m */,
+				0236C37522952E0600F66D7A /* HybridVC.h */,
+				0236C37622952E0600F66D7A /* HybridVC.m */,
+				0236C36F22952DDC00F66D7A /* NativeVC.h */,
+				0236C37022952DDC00F66D7A /* NativeVC.m */,
+				0236C37222952DEB00F66D7A /* FlutterVC.h */,
+				0236C37322952DEB00F66D7A /* FlutterVC.m */,
 				0236C35B22943A4500F66D7A /* Main.storyboard */,
 				0236C35E22943A4700F66D7A /* Assets.xcassets */,
 				0236C36022943A4700F66D7A /* LaunchScreen.storyboard */,
@@ -225,8 +245,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0236C35A22943A4500F66D7A /* ViewController.m in Sources */,
+				0236C37722952E0600F66D7A /* HybridVC.m in Sources */,
+				0236C37A22952EDD00F66D7A /* MainVC.m in Sources */,
+				0236C37422952DEB00F66D7A /* FlutterVC.m in Sources */,
 				0236C36522943A4700F66D7A /* main.m in Sources */,
 				0236C35722943A4500F66D7A /* AppDelegate.m in Sources */,
+				0236C37122952DDC00F66D7A /* NativeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
